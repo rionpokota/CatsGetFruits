@@ -18,7 +18,7 @@ SCREEN_HEIGHT = 120
 class App:
     def __init__(self):
         pyxel.init(SCREEN_WIDTH, SCREEN_HEIGHT, title="Cats Get Fruits", fps=30)
-        pyxel.load("./assets/chara.pyxres")
+        pyxel.load("./chara.pyxres")
         self.timer = 0
 
         # 初期化

@@ -105,7 +105,7 @@ class App:
                 self.oneup = [(k * 60, randint(0, 104), False) for k in range(1)]
 
                 pyxel.playm(0, loop=True)
-                pyxel.run(self.update, self.draw)
+                #pyxel.run(self.update, self.draw)
 
     def draw(self):
         # 背景カラー

@@ -46,7 +46,7 @@ class App:
         if pyxel.btnp(pyxel.KEY_ESCAPE):
             pyxel.quit()
 
-        if pyxel.btn(pyxel.KEY_RETURN) or pyxel.btn(pyxel.GAMEPAD1_BUTTON_START):
+        if pyxel.btn(pyxel.KEY_S) or pyxel.btn(pyxel.GAMEPAD1_BUTTON_B):
             self.start_flg = True
 
         self.update_cat()
@@ -85,7 +85,7 @@ class App:
                 self.shot_flg = True
 
         else:
-            if pyxel.btn(pyxel.KEY_RETURN) or pyxel.btn(pyxel.GAMEPAD1_BUTTON_START):
+            if pyxel.btn(pyxel.KEY_S) or pyxel.btn(pyxel.GAMEPAD1_BUTTON_B):
                 # 初期化
                 self.timer = 0
                 self.direction = RIGHT
@@ -115,9 +115,9 @@ class App:
             title = "Cats Get Fruits"
             pyxel.text(53, 50, title, 1)
             pyxel.text(52, 50, title, 7)
-            press_start = "PRESS ENTER or START"
-            pyxel.text(43, 80, press_start, 1)
-            pyxel.text(42, 80, press_start, 7)
+            press_start = "PRESS KEY S or BUTTON B"
+            pyxel.text(40, 80, press_start, 1)
+            pyxel.text(39, 80, press_start, 7)
 
         else:
             # フルーツを描く
@@ -169,9 +169,9 @@ class App:
                 gameover = "GAME OVER"
                 pyxel.text(65, 50, gameover, 1)
                 pyxel.text(64, 50, gameover, 7)
-                press = "RETRY PRESS ENTER or START"
-                pyxel.text(30, 80, press, 1)
-                pyxel.text(29, 80, press, 7)
+                press = "RETRY PRESS KEY S or BUTTON B"
+                pyxel.text(28, 80, press, 1)
+                pyxel.text(27, 80, press, 7)
 
     def update_apple(self, x, y, is_active):
         # 猫に触れたかどうかの判定
